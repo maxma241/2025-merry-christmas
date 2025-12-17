@@ -28,7 +28,7 @@ function start() {
         跟著題目輕鬆回答，就能把快樂傳遞給更多同事！
       </p>
       <div class="mt-8 flex gap-3">
-        <n-button type="primary" size="large" strong @click="start">開始作答 🎄</n-button>
+        <n-button tertiary size="large" @click="start">開始作答 🎄</n-button>
         <n-button tertiary size="large" @click="survey.reset()">清空紀錄</n-button>
       </div>
     </n-card>

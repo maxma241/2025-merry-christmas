@@ -35,7 +35,7 @@ function goNext() {
 
     <div class="mt-8 flex items-center justify-between text-base text-slate-200/80">
       <n-button tertiary size="large" @click="goPrev">⬅️ 上一題</n-button>
-      <n-button type="primary" size="large" @click="goNext">下一題 ➡️</n-button>
+      <n-button tertiary size="large" @click="goNext">下一題 ➡️</n-button>
     </div>
   </n-card>
 </template>

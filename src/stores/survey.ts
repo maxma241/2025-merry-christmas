@@ -8,7 +8,7 @@ export interface SurveyAnswer {
 
 export const useSurveyStore = defineStore('survey', () => {
   const answers = useLocalStorage<SurveyAnswer>('survey-answers', {
-    happinessHighlight: '',
+    happinessHighlight: 'I\'m Happy.',
     lovesMusic: '超級喜歡！'
   })
 

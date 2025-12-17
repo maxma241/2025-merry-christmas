@@ -30,7 +30,9 @@ function restart() {
     </div>
 
     <NSpace class="mt-8">
-      <n-button type="primary" size="large" strong>開心領取禮物</n-button>
+      <n-button type="success" size="large" strong>
+        <span class="text-white">開心領取禮物</span>
+      </n-button>
       <n-button tertiary size="large" @click="restart">再玩一次</n-button>
     </NSpace>
   </n-card>
