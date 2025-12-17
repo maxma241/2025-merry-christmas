@@ -6,26 +6,30 @@ export interface SurveyAnswer {
   lovesMusic: string
 }
 
-export type SurveyStage = 'intro' | 'q1' | 'q2' | 'complete'
-
 export const useSurveyStore = defineStore('survey', () => {
-  const stage = useLocalStorage<SurveyStage>('survey-stage', 'intro')
   const answers = useLocalStorage<SurveyAnswer>('survey-answers', {
-    happinessHighlight: '',
+    happinessHighlight: 'I\'m Happy.',
     lovesMusic: '超級喜歡！'
   })
 
+  const furthestStep = useLocalStorage<number>('survey-progress', 0)
+
+  function markStep(stepIndex: number) {
+    furthestStep.value = Math.max(furthestStep.value, stepIndex)
+  }
+
   function reset() {
-    stage.value = 'intro'
     answers.value = {
       happinessHighlight: '',
       lovesMusic: '超級喜歡！'
     }
+    furthestStep.value = 0
   }
 
   return {
-    stage,
     answers,
+    furthestStep,
+    markStep,
     reset
   }
 })

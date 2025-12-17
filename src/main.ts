@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { createDiscreteApi, NConfigProvider, darkTheme, zhTW } from 'naive-ui'
+import { createDiscreteApi, darkTheme, zhTW } from 'naive-ui'
 import App from './App.vue'
+import router from './router'
 
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
@@ -11,8 +12,8 @@ const app = createApp(App)
 const pinia = createPinia()
 
 app.use(pinia)
+app.use(router)
 
-// Ensure discrete components available when we need toast in the future
 createDiscreteApi(['message'], {
   configProviderProps: {
     locale: zhTW,
@@ -20,5 +21,4 @@ createDiscreteApi(['message'], {
   }
 })
 
-app.component('NConfigProvider', NConfigProvider)
 app.mount('#app')
