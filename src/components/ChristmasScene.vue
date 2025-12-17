@@ -10,13 +10,9 @@
             讓音樂和祝福帶來<span class="text-berry">滿滿快樂</span>
           </h1>
           <p class="text-slate-200/80 mt-3 leading-relaxed">
-            分享今年最開心的時刻，挑一首你最愛的歌，
-            在聖誕樹下讓藍芽喇叭把幸福播放出來。
+            分享今年最開心的時刻
           </p>
           <div class="flex flex-wrap gap-3 mt-5 text-sm text-slate-100">
-            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">
-              🎧 選歌放送
-            </span>
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/15">
               🎄 聖誕祝福
             </span>

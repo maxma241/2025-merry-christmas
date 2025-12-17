@@ -10,7 +10,7 @@ import { RouterView } from 'vue-router'
         <p class="text-sm uppercase tracking-[0.2em] text-candle">Make People Happy</p>
         <h1 class="text-3xl font-bold flex items-center gap-2">
           聖誕開心問卷
-          <span class="text-lg font-normal text-slate-200">一起分享快樂、交換音樂</span>
+          <span class="text-lg font-normal text-slate-200">一起分享快樂</span>
         </h1>
       </header>
 
